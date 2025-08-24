@@ -1,6 +1,6 @@
 import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
-import { deepPurple, purple, red } from "@mui/material/colors";
+import { deepPurple, green, purple, red } from "@mui/material/colors";
 import { useState } from "react";
 import { topSoccerClubs, type Club } from "../fixtures/data";
 import CleaningServices from "@mui/icons-material/CleaningServices";
@@ -26,9 +26,14 @@ export const AutocompleteComponent = () => {
           chip: {
             deleteIcon: <HighlightOff fontSize="small" />,
             sx: {
-              "& .MuiChip-deleteIcon": { color: red[500] },
+              "& .MuiChip-deleteIcon": {
+                color: red[500],
+                "&:hover": {
+                  color: green[700],
+                },
+              },
               // Ejemplo de sobreescritura de pseudoclases
-              "&:hover .MuiChip-deleteIcon": { color: red[700] },
+              // "&:hover .MuiChip-deleteIcon": { color: red[700] },
               bgcolor: purple[200],
             },
           },
