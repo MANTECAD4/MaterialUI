@@ -7,6 +7,8 @@ import { AutocompleteComponent } from "./components/autocomplete";
 import { ButtonComponent } from "./components/ButtonComponent";
 import { ButtonGroupComponent } from "./components/ButtonGroupComponent";
 import { CheckBoxComponent } from "./components/CheckBoxComponent";
+import { FloatingButtonComponent } from "./components/FloatingButtonComponent";
+import { FormComponents } from "./components/FormComponents";
 
 declare module "@mui/material/styles" {
   // interface CommonColors {
@@ -27,7 +29,7 @@ const theme = createTheme({
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ThemeProvider theme={theme}>
-      <CheckBoxComponent />
+      <FormComponents />
     </ThemeProvider>
   </StrictMode>
 );
