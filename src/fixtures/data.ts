@@ -33,3 +33,18 @@ topSoccerClubs.sort((a, b) => {
     return 0;
   }
 });
+
+export const labels: { [index: number]: string } = {
+  0.5: "Culero",
+  1: "Culero+",
+  1.5: "Malo",
+  2: "Malo+",
+  2.5: "Ok",
+  3: "Ok+",
+  3.5: "Bueno",
+  4: "Bueno+",
+  4.5: "Muy Bueno",
+  5: "Muy Bueno+",
+  5.5: "Excelente",
+  6: "Excelente+",
+};
