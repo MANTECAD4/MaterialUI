@@ -11,6 +11,9 @@ import { FloatingButtonComponent } from "./components/FloatingButtonComponent";
 import { FormComponents } from "./components/FormComponents";
 import { RadioComponent } from "./components/RadioComponent";
 import { RatingComponent } from "./components/RatingComponent";
+import { SelectComponent } from "./components/SelectComponent";
+import { SliderComponent } from "./components/SliderComponent";
+import { SwitchComponent } from "./components/SwitchComponent";
 
 declare module "@mui/material/styles" {
   // interface CommonColors {
@@ -31,7 +34,7 @@ const theme = createTheme({
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ThemeProvider theme={theme}>
-      <RatingComponent />
+      <SwitchComponent />
     </ThemeProvider>
   </StrictMode>
 );

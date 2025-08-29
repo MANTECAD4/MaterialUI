@@ -48,3 +48,17 @@ export const labels: { [index: number]: string } = {
   5.5: "Excelente",
   6: "Excelente+",
 };
+
+export const months = [
+  "January",
+  "february",
+  "march",
+  "april",
+  "may",
+  "june",
+  "july",
+  "august",
+  "september",
+  "november",
+  "december",
+];

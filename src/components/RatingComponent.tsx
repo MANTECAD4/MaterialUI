@@ -22,16 +22,16 @@ export const RatingComponent = () => {
         onChange={(event, newValue) => {
           setValue(newValue ?? 0);
         }}
-        // disabled
+        disabled
         sx={{
-          "&.MuiRating-root": {
-            "& .MuiSvgIcon-root": {
-              color: "red",
-              fontSize: 30,
-              mx: 1,
-            },
-            "&.Mui-disabled": { opacity: 1 / 4, pointerEvents: "none" },
+          // "&.MuiRating-root": {
+          "& .MuiSvgIcon-root": {
+            color: "red",
+            fontSize: 30,
+            mx: 1,
           },
+          "&.Mui-disabled": { opacity: 1 / 4, pointerEvents: "none" },
+          // },
         }}
       />
       <Box sx={{ ml: 2 }}>
