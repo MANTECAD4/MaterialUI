@@ -1,6 +1,6 @@
 import { Box, Grid, Rating, Typography } from "@mui/material";
 import { useState } from "react";
-import { labels } from "../fixtures/data";
+import { labels } from "../../fixtures/data";
 import { Favorite, FavoriteBorder } from "@mui/icons-material";
 
 export const RatingComponent = () => {

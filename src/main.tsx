@@ -3,17 +3,21 @@ import { createRoot } from "react-dom/client";
 // import "./index.css";
 // import { App } from "./App.tsx";
 import { createTheme, ThemeProvider } from "@mui/material";
-import { AutocompleteComponent } from "./components/autocomplete";
-import { ButtonComponent } from "./components/ButtonComponent";
-import { ButtonGroupComponent } from "./components/ButtonGroupComponent";
-import { CheckBoxComponent } from "./components/CheckBoxComponent";
-import { FloatingButtonComponent } from "./components/FloatingButtonComponent";
-import { FormComponents } from "./components/FormComponents";
-import { RadioComponent } from "./components/RadioComponent";
-import { RatingComponent } from "./components/RatingComponent";
-import { SelectComponent } from "./components/SelectComponent";
-import { SliderComponent } from "./components/SliderComponent";
-import { SwitchComponent } from "./components/SwitchComponent";
+import { TextfieldComponent } from "./components/InputCommponents/TextfieldComponent";
+// import { AutocompleteComponent } from "./components/InputCommponents/autocomplete";
+// import { ButtonComponent } from "./components/InputCommponents/ButtonComponent";
+// import { ButtonGroupComponent } from "./components/InputCommponents/ButtonGroupComponent";
+// import { CheckBoxComponent } from "./components/InputCommponents/CheckBoxComponent";
+// import { FloatingButtonComponent } from "./components/InputCommponents/FloatingButtonComponent";
+// import { FormComponents } from "./components/InputCommponents/FormComponents";
+// import { RadioComponent } from "./components/InputCommponents/RadioComponent";
+// import { RatingComponent } from "./components/InputCommponents/RatingComponent";
+// import { SelectComponent } from "./components/InputCommponents/SelectComponent";
+// import { SliderComponent } from "./components/InputCommponents/SliderComponent";
+// import { SwitchComponent } from "./components/InputCommponents/SwitchComponent";
+import { ToggleBtnComponent } from "./components/InputCommponents/ToggleBtnComponent";
+import { AssignmentInputs } from "./components/Assignments/AssignmentInputs";
+import { AvatarComponent } from "./components/Assignments/DataDisplayComponents/AvatarComponent";
 
 declare module "@mui/material/styles" {
   // interface CommonColors {
@@ -34,7 +38,7 @@ const theme = createTheme({
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ThemeProvider theme={theme}>
-      <SwitchComponent />
+      <AvatarComponent />
     </ThemeProvider>
   </StrictMode>
 );

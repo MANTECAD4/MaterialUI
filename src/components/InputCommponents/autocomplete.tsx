@@ -2,7 +2,7 @@ import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
 import { deepPurple, green, purple, red } from "@mui/material/colors";
 import { useState } from "react";
-import { topSoccerClubs, type Club } from "../fixtures/data";
+import { topSoccerClubs, type Club } from "../../fixtures/data";
 import CleaningServices from "@mui/icons-material/CleaningServices";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
 import { HighlightOff } from "@mui/icons-material";

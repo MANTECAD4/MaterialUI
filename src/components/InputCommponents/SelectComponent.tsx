@@ -6,7 +6,7 @@ import {
   Select,
   selectClasses,
 } from "@mui/material";
-import { months } from "../fixtures/data";
+import { months } from "../../fixtures/data";
 import { useState } from "react";
 import { green, grey, orange } from "@mui/material/colors";
 import { Bathtub, CalendarToday } from "@mui/icons-material";
