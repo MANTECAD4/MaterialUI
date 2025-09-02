@@ -15,10 +15,12 @@ export const topSoccerClubs: Club[] = [
   { championsNum: 7, country: "ITALY", label: "MILAN" },
   { championsNum: 2, country: "ITALY", label: "JUVENTUS" },
   { championsNum: 3, country: "ITALY", label: "INTER" },
-  // { championsNum: 4, country: "NETHERLANDS", label: "AJAX" },
+  { championsNum: 4, country: "NETHERLANDS", label: "AJAX" },
   { championsNum: 15, country: "SPAIN", label: "REAL MADRID" },
   { championsNum: 5, country: "SPAIN", label: "BARCELONA" },
 ];
+
+export const countries = ["NETHERLANDS", "SPAIN"];
 
 topSoccerClubs.sort((a, b) => {
   console.log("me ejecute");

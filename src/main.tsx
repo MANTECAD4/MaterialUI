@@ -18,6 +18,11 @@ import { TextfieldComponent } from "./components/InputCommponents/TextfieldCompo
 import { ToggleBtnComponent } from "./components/InputCommponents/ToggleBtnComponent";
 import { AssignmentInputs } from "./components/Assignments/AssignmentInputs";
 import { AvatarComponent } from "./components/Assignments/DataDisplayComponents/AvatarComponent";
+import { BadgeComponent } from "./components/Assignments/DataDisplayComponents/BadgeComponent";
+import { ChipComponent } from "./components/Assignments/DataDisplayComponents/ChipComponent";
+import { DividerComponent } from "./components/Assignments/DataDisplayComponents/DividerComponent";
+import { ListComponent } from "./components/Assignments/DataDisplayComponents/ListComponent";
+import { IconsMUI } from "./components/Assignments/DataDisplayComponents/IconsMUI";
 
 declare module "@mui/material/styles" {
   // interface CommonColors {
@@ -38,7 +43,7 @@ const theme = createTheme({
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ThemeProvider theme={theme}>
-      <AvatarComponent />
+      <IconsMUI />
     </ThemeProvider>
   </StrictMode>
 );
