@@ -6,10 +6,10 @@ export const IconsMUI = () => {
   return (
     <>
       {/* MUI Icons */}
-      {/* <AddReactionTwoToneIcon
+      <AddReactionTwoToneIcon
         // Los estilos se aplican directamente
-        sx={{ fill: purple["900"], fontSize: 40, "&:hover": { fill: "red" } }}
-      /> */}
+        sx={{ fill: purple["900"], fontSize: 100, "&:hover": { fill: "red" } }}
+      />
       <MyIcon color="secondary" sx={{ fontSize: 100 }} />
     </>
   );

@@ -64,3 +64,34 @@ export const months = [
   "november",
   "december",
 ];
+
+export const users = [
+  { id: 1, name: "Ana López", age: 28, city: "Madrid", isActive: true },
+  { id: 9, name: "Ana López", age: 28, city: "Madrid", isActive: true },
+  { id: 10, name: "Ana López", age: 28, city: "Madrid", isActive: true },
+  {
+    id: 2,
+    name: "Carlos Pérez",
+    age: 34,
+    city: "Barcelona",
+    isActive: false,
+  },
+  { id: 3, name: "María Gómez", age: 22, city: "Valencia", isActive: true },
+  {
+    id: 4,
+    name: "Luis Fernández",
+    age: 40,
+    city: "Sevilla",
+    isActive: true,
+  },
+  { id: 5, name: "Laura Sánchez", age: 31, city: "Bilbao", isActive: false },
+  { id: 6, name: "Jorge Ramírez", age: 45, city: "Málaga", isActive: true },
+  {
+    id: 7,
+    name: "Elena Torres",
+    age: 29,
+    city: "Zaragoza",
+    isActive: false,
+  },
+  { id: 8, name: "Pedro Castillo", age: 37, city: "Murcia", isActive: true },
+];

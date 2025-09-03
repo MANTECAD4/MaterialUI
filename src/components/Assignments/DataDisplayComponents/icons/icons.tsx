@@ -1,4 +1,4 @@
-import { SvgIcon, type SvgIconClassKey } from "@mui/material";
+import { SvgIcon } from "@mui/material";
 
 export const MyIcon = (props: any) => (
   <SvgIcon {...props}>
