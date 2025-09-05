@@ -11,7 +11,7 @@ import {
   Box,
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import { countries, topSoccerClubs } from "../../../fixtures/data";
+import { countries, topSoccerClubs } from "../../fixtures/data";
 import { Accessibility, Clear, EmojiEvents } from "@mui/icons-material";
 
 const MainListSubheader = styled(ListSubheader)(({ theme }) =>

@@ -19,43 +19,59 @@ import type { TextfieldComponent } from "./components/InputCommponents/Textfield
 // import { SwitchComponent } from "./components/InputCommponents/SwitchComponent";
 import { ToggleBtnComponent } from "./components/InputCommponents/ToggleBtnComponent";
 import { AssignmentInputs } from "./components/Assignments/AssignmentInputs";
-import { AvatarComponent } from "./components/Assignments/DataDisplayComponents/AvatarComponent";
-import { BadgeComponent } from "./components/Assignments/DataDisplayComponents/BadgeComponent";
-import { ChipComponent } from "./components/Assignments/DataDisplayComponents/ChipComponent";
-import { DividerComponent } from "./components/Assignments/DataDisplayComponents/DividerComponent";
-import { ListComponent } from "./components/Assignments/DataDisplayComponents/ListComponent";
-import { IconsMUI } from "./components/Assignments/DataDisplayComponents/IconsMUI";
-import { TableComponent } from "./components/Assignments/DataDisplayComponents/TableComponent";
-import { TooltipComponent } from "./components/Assignments/DataDisplayComponents/TooltipComponent";
-import { TypographyComponent } from "./components/Assignments/DataDisplayComponents/TypographyComponent";
+import { AvatarComponent } from "./components/DataDisplayComponents/AvatarComponent";
+import { BadgeComponent } from "./components/DataDisplayComponents/BadgeComponent";
+import { ChipComponent } from "./components/DataDisplayComponents/ChipComponent";
+import { DividerComponent } from "./components/DataDisplayComponents/DividerComponent";
+import { ListComponent } from "./components/DataDisplayComponents/ListComponent";
+import { IconsMUI } from "./components/DataDisplayComponents/IconsMUI";
+import { TableComponent } from "./components/DataDisplayComponents/TableComponent";
+import { TooltipComponent } from "./components/DataDisplayComponents/TooltipComponent";
+import { TypographyComponent } from "./components/DataDisplayComponents/TypographyComponent";
+import { AlertComponent } from "./components/FeedbackComponents/AlertComponent";
+import { BackdropComponent } from "./components/FeedbackComponents/BackdropComponent";
+import { ProgressComponent } from "./components/FeedbackComponents/ProgressComponent";
+import { DialogComponent } from "./components/FeedbackComponents/DialogComponent";
+import { SkeletonComponent } from "./components/FeedbackComponents/SkeletonComponent";
+import { SnackbarComponent } from "./components/FeedbackComponents/SnackbarComponent";
 
 // Para agregar nuevas variantes en TS
-declare module "@mui/material/styles" {
-  interface TypographyVariants {
-    bigText: React.CSSProperties;
-  }
+// declare module "@mui/material/styles" {
+//   interface TypographyVariants {
+//     bigText: React.CSSProperties;
+//   }
 
-  interface TypographyVariantsOptions {
-    bigText?: React.CSSProperties;
-  }
-}
-declare module "@mui/material/Typography" {
-  //Para el autocompletado en variant=''
-  interface TypographyPropsVariantOverrides {
-    bigText: true;
-  }
-}
+//   interface TypographyVariantsOptions {
+//     bigText?: React.CSSProperties;
+//   }
+// }
+// declare module "@mui/material/Typography" {
+//   //Para el autocompletado en variant=''
+//   interface TypographyPropsVariantOverrides {
+//     bigText: true;
+//   }
+// }
 
 const theme = createTheme({
-  typography: {
-    h3: {
-      fontFamily: "cursive",
-    },
-    bigText: { fontSize: 60 },
-  },
+  // typography: {
+  //   h3: {
+  //     fontFamily: "cursive",
+  //   },
+  //   bigText: { fontSize: 60 },
+  // },
+  // components: {
+  //   MuiTypography: {
+  //     defaultProps: { variantMapping: { h3: "div", bigText: "span" } },
+  //   },
+  // },
+  // components: {
+  //   MuiTypography: {
+  //     defaultProps: { variantMapping: { h3: "div", bigText: "span" } },
+  //   },
+  // },
   components: {
-    MuiTypography: {
-      defaultProps: { variantMapping: { h3: "div", bigText: "span" } },
+    MuiButton: {
+      defaultProps: { variant: "contained" },
     },
   },
 });
@@ -63,7 +79,7 @@ const theme = createTheme({
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ThemeProvider theme={theme}>
-      <TypographyComponent />
+      <SnackbarComponent />
     </ThemeProvider>
   </StrictMode>
 );

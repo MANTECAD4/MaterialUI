@@ -7,7 +7,7 @@ import {
   TableCell,
   TablePagination,
 } from "@mui/material";
-import { users } from "../../../fixtures/data";
+import { users } from "../../fixtures/data";
 import { useState } from "react";
 import { grey } from "@mui/material/colors";
 

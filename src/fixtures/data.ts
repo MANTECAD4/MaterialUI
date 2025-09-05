@@ -23,7 +23,6 @@ export const topSoccerClubs: Club[] = [
 export const countries = ["NETHERLANDS", "SPAIN"];
 
 topSoccerClubs.sort((a, b) => {
-  console.log("me ejecute");
   const countryA = a.country.toUpperCase();
   const countryB = b.country.toUpperCase();
   if (countryA < countryB) {
