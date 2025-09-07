@@ -16,7 +16,7 @@ export const SnackbarComponent = () => {
   return (
     <>
       <Snackbar
-        open={true}
+        open={show}
         onClose={() => setShow(false)}
         autoHideDuration={3000}
         anchorOrigin={{ horizontal: "right", vertical: "bottom" }}

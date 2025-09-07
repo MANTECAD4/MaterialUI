@@ -94,3 +94,18 @@ export const users = [
   },
   { id: 8, name: "Pedro Castillo", age: 37, city: "Murcia", isActive: true },
 ];
+
+export const questionsAccordion = [
+  {
+    question: "Why use MUI?",
+    answer: ` It's the most popular React components library`,
+  },
+  {
+    question: "How many components does MUI provide?",
+    answer: ` Over 200+ components.`,
+  },
+  {
+    question: "Are MUI components easy to customize?",
+    answer: ` Yes, you can override the components default styles via the sx prop.`,
+  },
+];

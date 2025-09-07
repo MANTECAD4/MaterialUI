@@ -34,6 +34,12 @@ import { ProgressComponent } from "./components/FeedbackComponents/ProgressCompo
 import { DialogComponent } from "./components/FeedbackComponents/DialogComponent";
 import { SkeletonComponent } from "./components/FeedbackComponents/SkeletonComponent";
 import { SnackbarComponent } from "./components/FeedbackComponents/SnackbarComponent";
+import { AccordionComponent } from "./components/SurfaceComponents/AccordionComponent";
+import { AppbarComponent } from "./components/SurfaceComponents/AppbarComponent";
+import { PaperComponent } from "./components/SurfaceComponents/PaperComponent";
+import { CardComponent } from "./components/SurfaceComponents/CardComponent";
+import { BottomNavComponent } from "./components/Navigation/BottomNavComponent";
+import { BreadcrumbsComponent } from "./components/Navigation/BreadcrumbsComponent";
 
 // Para agregar nuevas variantes en TS
 // declare module "@mui/material/styles" {
@@ -79,7 +85,7 @@ const theme = createTheme({
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ThemeProvider theme={theme}>
-      <SnackbarComponent />
+      <BreadcrumbsComponent />
     </ThemeProvider>
   </StrictMode>
 );
