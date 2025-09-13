@@ -43,6 +43,7 @@ export const BreadcrumbsComponent = () => {
           // "& .MuiBreadcrumbCollapsed-root": {
           //   bgcolor: "red !important",
           // },
+          // Boton items del path ocultos
           "& button[aria-label='Show path']": {
             bgcolor: "lightblue",
           },

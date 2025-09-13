@@ -9,6 +9,7 @@ export const BottomNavComponent = () => {
       <Paper sx={{ position: "fixed", bottom: 0, left: 0, right: 0 }}>
         <BottomNavigation
           value={selectedOption}
+          showLabels
           onChange={(event, newValue) => setSelectedOption(newValue)}
           sx={{
             // Estilos boton selecto
@@ -30,7 +31,6 @@ export const BottomNavComponent = () => {
               fill: "red",
             },
           }}
-          showLabels
         >
           <BottomNavigationAction
             // component={}

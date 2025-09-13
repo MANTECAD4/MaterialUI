@@ -14,7 +14,7 @@ import { styled } from "@mui/material/styles";
 import { countries, topSoccerClubs } from "../../fixtures/data";
 import { Accessibility, Clear, EmojiEvents } from "@mui/icons-material";
 
-const MainListSubheader = styled(ListSubheader)(({ theme }) =>
+export const MainListSubheader = styled(ListSubheader)(({ theme }) =>
   theme.unstable_sx({
     textAlign: "center",
     bgcolor: "black",

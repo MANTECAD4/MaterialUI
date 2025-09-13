@@ -20,7 +20,13 @@ export const topSoccerClubs: Club[] = [
   { championsNum: 5, country: "SPAIN", label: "BARCELONA" },
 ];
 
-export const countries = ["NETHERLANDS", "SPAIN"];
+export const countries = [
+  "NETHERLANDS",
+  "SPAIN",
+  "GERMANY",
+  "ENGLAND",
+  "ITALY",
+];
 
 topSoccerClubs.sort((a, b) => {
   const countryA = a.country.toUpperCase();
