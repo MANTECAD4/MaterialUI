@@ -45,7 +45,7 @@ export const VerticalStepperComponent = () => {
         {steps.map((step, i) => (
           <Step
             key={step}
-            expanded
+            // expanded
             sx={{
               // Estilos iconos
               // Base

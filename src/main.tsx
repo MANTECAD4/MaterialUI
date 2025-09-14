@@ -11,6 +11,7 @@ import { SpeedDialComponent } from "./components/Navigation/SpeedDialComponent";
 import { LinearStepperComponent } from "./components/Navigation/Stepper/LinearStepperComponent";
 import { NonLinearStepperComponent } from "./components/Navigation/Stepper/NonLinearSteppercomponent";
 import { StepperComponents } from "./components/Navigation/Stepper/StepperComponents";
+import { TabsComponent } from "./components/Navigation/Tabs/TabsComponent";
 // import type { TextfieldComponent } from "./components/InputCommponents/TextfieldComponent";
 // import { LinkComponent } from "./components/Navigation/LinkComponent";
 // import { AutocompleteComponent } from "./components/InputCommponents/autocomplete";
@@ -93,7 +94,7 @@ const theme = createTheme({
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ThemeProvider theme={theme}>
-      <StepperComponents />
+      <TabsComponent />
     </ThemeProvider>
   </StrictMode>
 );

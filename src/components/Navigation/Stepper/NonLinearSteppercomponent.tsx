@@ -64,6 +64,7 @@ export const NonLinearStepperComponent = () => {
               "& .MuiSvgIcon-root": {
                 fill: "lightblue",
                 fontSize: 40,
+                // CUando el icono es texto
                 text: {
                   fontWeight: "bold",
                   fill: "whitesmoke",
