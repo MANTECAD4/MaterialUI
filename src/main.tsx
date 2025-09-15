@@ -12,6 +12,9 @@ import { LinearStepperComponent } from "./components/Navigation/Stepper/LinearSt
 import { NonLinearStepperComponent } from "./components/Navigation/Stepper/NonLinearSteppercomponent";
 import { StepperComponents } from "./components/Navigation/Stepper/StepperComponents";
 import { TabsComponent } from "./components/Navigation/Tabs/TabsComponent";
+import { BoxFunctionality } from "./components/LayoutComponents/BoxFunctionality";
+import { ContainerFunctionality } from "./components/LayoutComponents/ContainerFunctionality";
+import { GridFunctionality } from "./components/LayoutComponents/GridFunctionality";
 // import type { TextfieldComponent } from "./components/InputCommponents/TextfieldComponent";
 // import { LinkComponent } from "./components/Navigation/LinkComponent";
 // import { AutocompleteComponent } from "./components/InputCommponents/autocomplete";
@@ -94,7 +97,7 @@ const theme = createTheme({
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ThemeProvider theme={theme}>
-      <TabsComponent />
+      <GridFunctionality />
     </ThemeProvider>
   </StrictMode>
 );

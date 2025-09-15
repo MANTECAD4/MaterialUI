@@ -2,7 +2,7 @@ import { Divider, Typography } from "@mui/material";
 import type { ReactNode } from "react";
 type PropTypes = {
   title: string;
-  children: ReactNode;
+  children?: ReactNode;
 };
 export const ComponentsLayout = ({ title, children }: PropTypes) => {
   return (

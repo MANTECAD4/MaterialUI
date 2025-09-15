@@ -93,9 +93,10 @@ export const TabsComponent = () => {
             }}
             slotProps={{
               indicator: { sx: { bgcolor: "darkcyan", height: 3, mb: 0.5 } },
-              // scrollButtons: {
-              //   sx: { "& > svg": { fill: "blue" } },
-              // },
+              scrollButtons: {
+                // disableRipple: true,
+                // sx: { "& > svg": { fill: "blue" } },
+              },
               // endScrollButtonIcon: {},
             }}
             sx={{
