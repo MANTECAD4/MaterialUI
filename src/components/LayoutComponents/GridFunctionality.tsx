@@ -4,7 +4,7 @@ import { ComponentsLayout } from "../ComponentsLayout";
 export const GridFunctionality = () => {
   return (
     <>
-      <ComponentsLayout title="Grid">
+      <ComponentsLayout title="Grid- Example ">
         <h1>My App</h1>
         <h2>This is my page content</h2>
         <Grid
@@ -52,7 +52,6 @@ export const GridFunctionality = () => {
           </Grid>
         </Grid>
       </ComponentsLayout>
-      <ComponentsLayout title="Grid - Example 1"></ComponentsLayout>
     </>
   );
 };

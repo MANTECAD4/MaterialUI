@@ -15,6 +15,7 @@ import { TabsComponent } from "./components/Navigation/Tabs/TabsComponent";
 import { BoxFunctionality } from "./components/LayoutComponents/BoxFunctionality";
 import { ContainerFunctionality } from "./components/LayoutComponents/ContainerFunctionality";
 import { GridFunctionality } from "./components/LayoutComponents/GridFunctionality";
+import { GridDemo } from "./components/LayoutComponents/GridDemo";
 // import type { TextfieldComponent } from "./components/InputCommponents/TextfieldComponent";
 // import { LinkComponent } from "./components/Navigation/LinkComponent";
 // import { AutocompleteComponent } from "./components/InputCommponents/autocomplete";
@@ -91,13 +92,20 @@ const theme = createTheme({
     MuiButton: {
       defaultProps: { variant: "contained" },
     },
+    MuiGrid: {
+      defaultProps: {
+        bgcolor: "whitesmoke",
+        // color: "transparent",
+        // border: 1,
+      },
+    },
   },
 });
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ThemeProvider theme={theme}>
-      <GridFunctionality />
+      <GridDemo />
     </ThemeProvider>
   </StrictMode>
 );
