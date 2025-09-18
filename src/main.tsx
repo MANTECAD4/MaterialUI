@@ -16,6 +16,7 @@ import { BoxFunctionality } from "./components/LayoutComponents/BoxFunctionality
 import { ContainerFunctionality } from "./components/LayoutComponents/ContainerFunctionality";
 import { GridFunctionality } from "./components/LayoutComponents/GridFunctionality";
 import { GridDemo } from "./components/LayoutComponents/GridDemo";
+import { ImageListFunctionality } from "./components/LayoutComponents/ImageListFunctionality";
 // import type { TextfieldComponent } from "./components/InputCommponents/TextfieldComponent";
 // import { LinkComponent } from "./components/Navigation/LinkComponent";
 // import { AutocompleteComponent } from "./components/InputCommponents/autocomplete";
@@ -105,7 +106,7 @@ const theme = createTheme({
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ThemeProvider theme={theme}>
-      <GridDemo />
+      <ImageListFunctionality />
     </ThemeProvider>
   </StrictMode>
 );

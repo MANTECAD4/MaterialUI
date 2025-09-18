@@ -1,12 +1,8 @@
-import { Person } from "@mui/icons-material";
 import {
   Avatar,
-  Box,
   Grid,
-  Paper,
   Skeleton,
   Typography,
-  useTheme,
   useMediaQuery,
 } from "@mui/material";
 
@@ -14,11 +10,11 @@ const longTitle =
   "Channel title but its actually too long to fit in the container";
 const longDesc = "Some random long description for the elements";
 
-const SubscriptionElement = ({ mediaQuery }) => {
+const SubscriptionElement = ({ mediaQuery }: any) => {
   return (
     <Grid container justifyContent={"center"}>
       <Grid size={"auto"} justifyContent={"center"} alignItems={"center"}>
-        <Skeleton variant="circular" height={"3rem"} width={"3rem"}>
+        <Skeleton variant="circular">
           <Avatar />
         </Skeleton>
       </Grid>
@@ -67,13 +63,13 @@ const VideoElement = () => {
           </Skeleton>
         </Grid>
         <Grid size={"grow"} py={1}>
-          <Skeleton height={"100%"} width={"100%"} variant="rounded" />
-          {/* <Typography title={longTitle} noWrap>
+          {/* <Skeleton height={"100%"} width={"100%"} variant="rounded" /> */}
+          <Typography title={longTitle} noWrap>
             {longTitle}
           </Typography>
           <Typography title={longDesc} noWrap variant="body2">
             {longDesc}
-          </Typography> */}
+          </Typography>
         </Grid>
       </Grid>
     </Grid>
