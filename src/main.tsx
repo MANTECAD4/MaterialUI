@@ -2,9 +2,9 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "@mui/material/styles";
 
-// import "./index.css";
+import "./index.css";
 // import { App } from "./App.tsx";
-import { createTheme, ThemeProvider } from "@mui/material";
+import { createTheme, CssBaseline, ThemeProvider } from "@mui/material";
 import { MenuComponent } from "./components/Navigation/MenuComponent";
 import { PaginationComponent } from "./components/Navigation/PaginationComponent";
 import { SpeedDialComponent } from "./components/Navigation/SpeedDialComponent";
@@ -17,6 +17,9 @@ import { ContainerFunctionality } from "./components/LayoutComponents/ContainerF
 import { GridFunctionality } from "./components/LayoutComponents/GridFunctionality";
 import { GridDemo } from "./components/LayoutComponents/GridDemo";
 import { ImageListFunctionality } from "./components/LayoutComponents/ImageListFunctionality";
+import { StackFunctionality } from "./components/LayoutComponents/StackFunctionality";
+import { ClickAwayListenerFunctionality } from "./Functionalities/ClickAwayListenerFunctionality";
+import { CssBaselineFunctionality } from "./Functionalities/CssBaselineFunctionality";
 // import type { TextfieldComponent } from "./components/InputCommponents/TextfieldComponent";
 // import { LinkComponent } from "./components/Navigation/LinkComponent";
 // import { AutocompleteComponent } from "./components/InputCommponents/autocomplete";
@@ -72,33 +75,20 @@ import { ImageListFunctionality } from "./components/LayoutComponents/ImageListF
 //   }
 // }
 
-const theme = createTheme({
-  // typography: {
-  //   h3: {
-  //     fontFamily: "cursive",
-  //   },
-  //   bigText: { fontSize: 60 },
-  // },
-  // components: {
-  //   MuiTypography: {
-  //     defaultProps: { variantMapping: { h3: "div", bigText: "span" } },
-  //   },
-  // },
-  // components: {
-  //   MuiTypography: {
-  //     defaultProps: { variantMapping: { h3: "div", bigText: "span" } },
-  //   },
-  // },
-  components: {
-    MuiButton: {
-      defaultProps: { variant: "contained" },
-    },
-    MuiGrid: {
-      defaultProps: {
-        bgcolor: "whitesmoke",
-        // color: "transparent",
-        // border: 1,
-      },
+let theme = createTheme({
+  typography: {
+    fontWeightBold: 900,
+    body1: { fontFamily: "cursive" /* color: "brown" */ },
+  },
+  palette: {
+    mode: "light",
+  },
+});
+
+theme = createTheme(theme, {
+  palette: {
+    background: {
+      default: theme.palette.mode === "dark" ? "purple" : "yellow",
     },
   },
 });
@@ -106,7 +96,7 @@ const theme = createTheme({
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ThemeProvider theme={theme}>
-      <ImageListFunctionality />
+      <CssBaselineFunctionality />
     </ThemeProvider>
   </StrictMode>
 );
