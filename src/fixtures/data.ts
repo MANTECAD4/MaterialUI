@@ -28,18 +28,18 @@ export const countries = [
   "ITALY",
 ];
 
-topSoccerClubs.sort((a, b) => {
-  const countryA = a.country.toUpperCase();
-  const countryB = b.country.toUpperCase();
-  if (countryA < countryB) {
-    return -1;
-  }
-  if (countryA > countryB) {
-    return 1;
-  } else {
-    return 0;
-  }
-});
+// topSoccerClubs.sort((a, b) => {
+//   const countryA = a.country.toUpperCase();
+//   const countryB = b.country.toUpperCase();
+//   if (countryA < countryB) {
+//     return -1;
+//   }
+//   if (countryA > countryB) {
+//     return 1;
+//   } else {
+//     return 0;
+//   }
+// });
 
 export const labels: { [index: number]: string } = {
   0.5: "Culero",
