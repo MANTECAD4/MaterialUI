@@ -13,6 +13,8 @@ import { TextAreaAutoSizeFunctionality } from "./Functionalities/TextAreaFunctio
 import { TransitionsFunctionality } from "./Functionalities/Transitions/TransitionsFunctionality";
 import { TransitionGroupFunctionality } from "./Functionalities/Transitions/TransitionGroupFunctionality";
 import { UseMediaQueryFunctionality } from "./Functionalities/UseMediaQueryFunctionality";
+import { ScrollTriggerHook } from "./Functionalities/ScrollTriggerHook";
+import { DemoScrollTrigger } from "./Assignments/DemoScrollTrigger";
 //
 
 let theme = createTheme({
@@ -36,7 +38,7 @@ let theme = createTheme({
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ThemeProvider theme={theme}>
-      <UseMediaQueryFunctionality />
+      <DemoScrollTrigger />
     </ThemeProvider>
   </StrictMode>
 );
